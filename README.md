@@ -39,7 +39,7 @@ git clone git@github.com:gabrieldemarmiesse/autokeras.git
 
 to clone it with SSH.
 
-### Step 3: Make a new branch to work on you feature
+### Step 3: Make a new branch to make your modifications
 
 It's never a good idea to work on the master branch. It'll become clear why once you start doing your second pull request. So let's make a new one:
 ```bash
