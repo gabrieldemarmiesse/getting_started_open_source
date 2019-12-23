@@ -21,7 +21,7 @@ First head to the page of the project, in my example, autokeras: https://github.
  
  #### What is a fork?
  
- In short, a fork is a copy of a repository. In our case, the repository is https://github.com/keras-team/autokeras , if I make a fork of it, I'll have a copy at https://github.com/gabrieldemarmiesse/autokeras . It'll be one of my repositories. Since it's my own repository now, I can pull and push as much as I want. 
+ In short, a fork is a copy of a repository. In our case, the repository is https://github.com/keras-team/autokeras (upstream), if I make a fork of it, I'll have a copy at https://github.com/gabrieldemarmiesse/autokeras . It'll be one of my repositories. Since it's my own repository now, I can pull and push as much as I want. When people talk about fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
  
  ### Step 2: Cloning your fork
  
@@ -44,11 +44,11 @@ to clone it with SSH.
 It's never a good idea to work on the master branch. It'll become clear why once you start doing your second pull request. So let's make a new one:
 ```bash
 cd ./autokeras
-git checkout -b my_new_pretty_branch
+git checkout -b my_pretty_branch_for_pr_1
 git status
 ```
 
-You're now on the new branch `my_new_pretty_branch` and ready to work! 
+You're now on the new branch `my_pretty_branch` and ready to work! 
 
 Remember: one branch = one pull request. The branch name doesn't have to be the name of your pull request, so no worries if your branch name is bad or not very descriptive.
 
@@ -94,5 +94,41 @@ CI stands for "Continuous integration". It's a system that runs on a server. It 
 Every time you add a commit to the repository, or every time a pull request is opened, the CI system will spawn a fresh new virtual machine, clone the repository, checkout to the commit that was just added and runs many tests. It then reports the result.
 
 
+### Step 8 (optional): Add more commits to your pull request
 
- 
+The pull request is now done, but there is still the code review. You might need to wait for a few days until a maintainer reviews your code. 
+
+Once the maintainer does, if everything is good, you'll get some thanks and your pull request will be merged.
+
+If the maintainer ask for changes (which is frequent), you need to modify the code. In this case **do not open another pull request**. As was said earlier, one branch = one pull request. You just need to do:
+
+```bash
+git checkout my_pretty_branch_for_pr_1
+```
+In case you were not on this branch already. 
+
+Then do the requested code modifications and do:
+
+```bash
+git add .
+git commit
+git push
+```
+
+The commit will be added to the branch. You should see it appear in the pull request page. You'll also trigger the continuous integration system again with this new commit.
+
+Repeat step 8 until your pull request is merged!
+
+
+
+### Step 9: Make a second pull request
+
+Your first pull request was merged. Maybe you think it was easier than you thought and you'd like to do it again.
+
+You may be very tempted to delete your fork and redo steps 1 to 8 again. 
+It's obvious that there is a better solution...
+
+#### Sync your local master branch with the upstream master branch
+
+If you remember, we said earlier that working on the master branch wasn't a good idea. You'll understand why now. We need the master branch to be in sync with the upstream master branch.
+
