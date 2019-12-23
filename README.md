@@ -48,7 +48,7 @@ git checkout -b my_pretty_branch_for_pr_1
 git status
 ```
 
-You're now on the new branch `my_pretty_branch` and ready to work! 
+You're now on the new branch `my_pretty_branch_for_pr_1` and ready to work! 
 
 Remember: one branch = one pull request. The branch name doesn't have to be the name of your pull request, so no worries if your branch name is bad or not very descriptive.
 
@@ -118,7 +118,6 @@ git push
 The commit will be added to the branch. You should see it appear in the pull request page. You'll also trigger the continuous integration system again with this new commit.
 
 Repeat step 8 until your pull request is merged!
-
 
 
 ### Step 9: Make a second pull request
