@@ -125,9 +125,77 @@ Repeat step 8 until your pull request is merged!
 Your first pull request was merged. Maybe you think it was easier than you thought and you'd like to do it again.
 
 You may be very tempted to delete your fork and redo steps 1 to 8 again. 
-It's obvious that there is a better solution...
+There is obviously a better solution... Here is the setup that you need to do only once. All your future pull requests will be easier to make now.
 
-#### Sync your local master branch with the upstream master branch
+#### Step 9.1! Sync your local master branch with the upstream master branch
 
 If you remember, we said earlier that working on the master branch wasn't a good idea. You'll understand why now. We need the master branch to be in sync with the upstream master branch.
 
+Some commits have been added to the upstream master branch. To pull them locally, you need to add the upstream repo as a remote. To do that, head to the upstream repository, click on "Clone this repository" and select HTTPS. Then execute the command:
+
+```bash
+git remote add upstream https://github.com/keras-team/autokeras.git
+```
+
+Then:
+```bash
+git remote -v
+```
+
+To read the output:
+* `upstream` = The upstream (original) repository.
+* `origin` = Your fork.
+
+By default, if you use `git push` and `git pull`, it'll still use `origin`. We want to change that for the master branch. We want the master branch to be in sync with `upstream` and not `origin` so that you can always work with the latest version of the code:
+
+```bash
+git fetch upstream
+git checkout master
+git branch --set-upstream-to upstream/master
+git status
+```
+
+Now, to get the latest commits added to the upstream repository, just do:
+
+```bash
+git checkout master
+git pull
+```
+
+#### Step 9.2: Make a new branch to make your modifications
+
+It's identical to step 3
+
+```bash
+git checkout -b my_pretty_branch_for_pr_2
+# do your work here
+git add .
+git commit
+git push
+```
+
+Now go to the upstream repository web page, click on "Pull requests" and click on the button "Open a new pull request".
+
+### Step 10: Make a third pull request.
+
+I believe it's easy to understand what to do at this point. But just in case, here are the commands to execute to make a third pull request:
+
+```bash
+git checkout master
+git pull                 # get the latest changes
+git checkout -b my_pretty_branch_for_pr_3
+# do your work here
+git add .
+git commit 
+git push
+```
+
+Go to the upstream repo web page and click on "Open a new pull request".
+
+-----
+
+Other sections to add later on:
+
+* Resolve git conflicts.
+* How to make a good pull request?
+* The unofficial rules of open-source
