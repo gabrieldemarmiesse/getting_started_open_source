@@ -3,6 +3,9 @@ You want to make a pull request to an open-source project? You don't know how to
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
 
+This is not the only way to do it, but since I'm in the Keras team, this is how I do it. Of course this works with any open source project.
+
+
 ### This guide will assume that:
 
 1) You know how to use git, at least you know what is a commit and a branch and a few basic commands.
@@ -21,7 +24,9 @@ First head to the page of the project, in my example, autokeras: https://github.
  
  #### What is a fork?
  
- In short, a fork is a copy of a repository. In our case, the repository is https://github.com/keras-team/autokeras (upstream), if I make a fork of it, I'll have a copy at https://github.com/gabrieldemarmiesse/autokeras . It'll be one of my repositories. Since it's my own repository now, I can pull and push as much as I want. When people talk about fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
+ In short, a fork is a copy of a repository. In our case, the repository is https://github.com/keras-team/autokeras (upstream), if I make a fork of it, I'll have a copy at https://github.com/gabrieldemarmiesse/autokeras . 
+ 
+ It'll be one of my repositories. Since it's my own repository now, I can pull and push as much as I want. When people talk about a fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
  
  ### Step 2: Cloning your fork
  
@@ -131,7 +136,7 @@ Your first pull request was merged. Maybe you think it was easier than you thoug
 You may be very tempted to delete your fork and redo steps 1 to 8 again. 
 There is obviously a better solution... Here is the setup that you need to do only once. All your future pull requests will be easier to make now.
 
-#### Step 9.1! Sync your local master branch with the upstream master branch
+#### Step 9.1: Sync your local master branch with the upstream master branch
 
 If you remember, we said earlier that working on the master branch wasn't a good idea. You'll understand why now. We need the master branch to be in sync with the upstream master branch.
 
