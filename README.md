@@ -70,7 +70,11 @@ If you go to your fork (in our case https://github.com/gabrieldemarmiesse/autoke
 
 ### Step 6: Opening the pull request
 
-Now head to the original repository. Click on the tab "Pull requests", you should see a banner saying something like "You just pushed the xxx branch 2 minutes ago. Make a pull request?". 
+Now head to the original repository. Click on the tab "Pull requests", you should see a banner saying something like 
+
+> gabrieldemarmiesse:my_pretty_branch_for_pr1 (one minute ago). 
+>
+> Compare & pull request 
 
 Click the green button and you'll be able to review the diff, add a title to your pull request and add a description. 
 
@@ -174,7 +178,7 @@ git commit
 git push
 ```
 
-Now go to the upstream repository web page, click on "Pull requests" and click on the button "Open a new pull request".
+Now go to the upstream repository web page, click on "Pull requests" and click on the button "Compare & pull request".
 
 ### Step 10: Make a third pull request.
 
@@ -190,7 +194,7 @@ git commit
 git push
 ```
 
-Go to the upstream repo web page and click on "Open a new pull request".
+Go to the upstream repo web page and click on "Compare & pull request".
 
 -----
 
