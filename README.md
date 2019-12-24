@@ -1,4 +1,5 @@
 # Getting started with open-source
+
 You want to make a pull request to an open-source project? You don't know how to do it? Here is how to.
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
@@ -12,11 +13,13 @@ This is not the only way to do it, but since I'm in the Keras team, this is how 
 2) You know which project you want to work on. In this guide, we'll assume that it's an open source project that you don't control and that the repository is hosted on GitHub. For example, it could be [Cython](https://github.com/cython/cython), [the Windows terminal](https://github.com/microsoft/terminal) or [Tensorflow](https://github.com/tensorflow/tensorflow).
 3) You know what modification you want to do. What I mean is that you know which file you want to modify and which lines.
 
-In here, we'll always take as example my account: https://github.com/gabrieldemarmiesse and we'll say that I want to make a contribution to autokeras (https://github.com/keras-team/autokeras).
+In here, as example, we'll say that your GitHub username is `my_pretty_username` and that you want to make a pull request to this repository: `github.com/gabrieldemarmiesse/getting_started_open_source`
+
+You can follow the tutorial and make dummy pull requests to this repository. Think of it as a sandbox, it's made to learn, so no worries if you mess up! (Actually, you can't mess it up, because only I have the write permissions on it.)
 
 ### Step 1: Making a fork
 
-First head to the page of the project, in my example, autokeras: https://github.com/keras-team/autokeras . If you look at the top right of the page, you'll see a button called "Fork":
+First head to the page of the project, in my example, https://github.com/gabrieldemarmiesse/getting_started_open_source . If you look at the top right of the page, you'll see a button called "Fork":
  
  ![](./screenshots/fork_button.png)
  
