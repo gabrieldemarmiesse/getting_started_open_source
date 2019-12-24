@@ -27,7 +27,10 @@ First head to the page of the project, in my example, https://github.com/gabriel
  
  #### What is a fork?
  
- In short, a fork is a copy of a repository. In our case, the repository is https://github.com/keras-team/autokeras (upstream), if I make a fork of it, I'll have a copy at https://github.com/gabrieldemarmiesse/autokeras . 
+ In short, a fork is a copy of a repository. In our case:
+ 
+ * https://github.com/gabrieldemarmiesse/getting_started_open_source is upstream.
+ * https://github.com/my_pretty_username/getting_started_open_source is the fork. 
  
  It'll be one of my repositories. Since it's my own repository now, I can pull and push as much as I want. When people talk about a fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
  
