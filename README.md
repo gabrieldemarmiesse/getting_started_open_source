@@ -195,11 +195,3 @@ git push
 ```
 
 Go to the upstream repo web page and click on "Compare & pull request".
-
------
-
-Other sections to add later on:
-
-* Resolve git conflicts.
-* How to make a good pull request?
-* The unofficial rules of open-source
