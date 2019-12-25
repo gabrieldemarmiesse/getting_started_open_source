@@ -4,14 +4,14 @@ You want to make a pull request to an open-source project? You don't know how to
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
 
-This is not the only way to do it, but since I'm in the Keras team, this is how I do it. Of course this works with any open source project.
+This is not the only way to do it. And of course this also works with any open source project.
 
 
 ### This guide will assume that:
 
 1) You know how to use git, at least you know what is a commit and a branch and a few basic commands.
 2) You know which project you want to work on. In this guide, we'll assume that it's an open source project that you don't control and that the repository is hosted on GitHub. For example, it could be [Cython](https://github.com/cython/cython), [the Windows terminal](https://github.com/microsoft/terminal) or [Tensorflow](https://github.com/tensorflow/tensorflow).
-3) You know what modification you want to do. What I mean is that you know which file you want to modify and which lines.
+3) You know what modifications you want to do. What I mean is you know which files you want to modify and which lines.
 
 In here, as example, we'll say that your GitHub username is `my_pretty_username` and that you want to make a pull request to this repository: `github.com/gabrieldemarmiesse/getting_started_open_source`
 
@@ -32,20 +32,20 @@ First head to the page of the project, in my example, https://github.com/gabriel
  * https://github.com/gabrieldemarmiesse/getting_started_open_source is upstream.
  * https://github.com/my_pretty_username/getting_started_open_source is the fork. 
  
- It'll be one of my repositories. Since it's my own repository now, I can pull and push as much as I want. When people talk about a fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
+ The fork is one of your repositories. Since it's your own repository now, you can pull and push as much as you want. When people talk about a fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
  
  ### Step 2: Cloning your fork
  
- I now have my fork of autokeras under my username: https://github.com/gabrieldemarmiesse/autokeras . I'll use it to work since I can push and pull to it. Click on the green "Clone" button (of your fork, not the original repository) and use it to clone locally. For example, in my case, I can do:
+ You now have your fork under your username: https://github.com/gabrieldemarmiesse/getting_started_open_source . You'll use it to work since I can push and pull with it. Click on the green "Clone" button (of your fork, not the upstream repository) and use it to clone locally. For example, in your case, you can do:
  
  ```bash
-git clone https://github.com/gabrieldemarmiesse/autokeras.git
+git clone https://github.com/my_pretty_username/getting_started_open_source.git
 ```
 
 to clone with HTTPS or 
 
 ```bash
-git clone git@github.com:gabrieldemarmiesse/autokeras.git
+git clone git@github.com:my_pretty_username/getting_started_open_source.git
 ```
 
 to clone it with SSH.
@@ -54,7 +54,7 @@ to clone it with SSH.
 
 It's never a good idea to work on the master branch. It'll become clear why once you start doing your second pull request. So let's make a new one:
 ```bash
-cd ./autokeras
+cd ./getting_started_open_source
 git checkout -b my_pretty_branch_for_pr_1
 git status
 ```
@@ -76,25 +76,25 @@ git commit
 git push
 ```
 
-If you go to your fork (in our case https://github.com/gabrieldemarmiesse/autokeras), you'll see that your branch is now there (you can click on the branch button to see).
+If you go to your fork, you'll see that your branch is now there (you can click on the branch button to see).
 
 
 ### Step 6: Opening the pull request
 
-Now head to the original repository. Click on the tab "Pull requests", you should see a banner saying something like 
+Now head to the original(upstream) repository. Click on the tab "Pull requests", you should see a banner saying something like 
 
-> gabrieldemarmiesse:my_pretty_branch_for_pr1 (one minute ago). 
+> my_pretty_username:my_pretty_branch_for_pr1 (one minute ago). 
 >
 > Compare & pull request 
 
 Click the green button and you'll be able to review the diff, add a title to your pull request and add a description. 
 
-Don't worry, you'll be able to modify the pull request later on. If you think that you forgot a modification in the code or you later on wants to change the title, it's fine.
+Don't worry, you'll be able to modify the pull request (title, descriptions and add commits) later on if needed.
 
 
 ### Step 7: The continuous integration system
 
-Every time you open a pull request, it will trigger tests in a CI system.
+Every time you open a pull request or add a commits to it, it will trigger tests in a CI system.
 
 You can see the CI and the logs at the bottom of the pull request:
 
@@ -104,9 +104,11 @@ If the CI is failing, you can see why by checking the logs. For that, click on "
 
 #### What is a CI system?
 
-CI stands for "Continuous integration". It's a system that runs on a server. It watches your git repository closely. 
+CI stands for "Continuous integration". It's a system that runs on a server. It watches your git repository closely.
 
 Every time you add a commit to the repository, or every time a pull request is opened, the CI system will spawn a fresh new virtual machine, clone the repository, checkout to the commit that was just added and runs many tests. It then reports the result.
+
+There are nowadays many CI providers: Travis CI, CircleCI, Azure pilelines, Github actions...
 
 
 ### Step 8 (optional): Add more commits to your pull request
@@ -115,7 +117,7 @@ The pull request is now done, but there is still the code review. You might need
 
 Once the maintainer does, if everything is good, you'll get some thanks and your pull request will be merged.
 
-If the maintainer ask for changes (which is frequent), you need to modify the code. In this case **do not open another pull request**. As was said earlier, one branch = one pull request. You just need to do:
+If the maintainer asks for changes (which is frequent), you need to modify the code. In this case **do not open another pull request**. As was said earlier, one branch = one pull request. You just need to do:
 
 ```bash
 git checkout my_pretty_branch_for_pr_1
@@ -149,7 +151,7 @@ If you remember, we said earlier that working on the master branch wasn't a good
 Some commits have been added to the upstream master branch. To pull them locally, you need to add the upstream repo as a remote. To do that, head to the upstream repository, click on "Clone this repository" and select HTTPS. Then execute the command:
 
 ```bash
-git remote add upstream https://github.com/keras-team/autokeras.git
+git remote add upstream https://github.com/gabrieldemarmiesse/getting_started_open_source.git
 ```
 
 Then:
@@ -193,7 +195,7 @@ Now go to the upstream repository web page, click on "Pull requests" and click o
 
 ### Step 10: Make a third pull request.
 
-I believe it's easy to understand what to do at this point. But just in case, here are the commands to execute to make a third pull request:
+I believe it's easy to understand what to do at this point. But just in case, here are the commands to execute to make a third pull request, given that you followed all the previous steps:
 
 ```bash
 git checkout master
