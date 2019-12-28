@@ -89,6 +89,16 @@ Click the green button and you'll be able to review the diff, add a title to you
 
 Don't worry, you'll be able to modify the pull request (title, descriptions and add commits) later on if needed.
 
+#### (optional) Closing an issue when the pull request is merged:
+
+GitHub has a special syntax that can be used.
+
+Let's say your pull request fixes an issue. You believe that this issue should be closed once your pull request is merged. Let's say it's the issue number 354. Then, somewhere in the description, write:
+
+> fixes #354
+
+GitHub will detect this syntax. Once your pull request is merged, the issue 354 will be automagically closed. Use this system to save the project maintainer some of his/her time!
+
 
 ### Step 7: The continuous integration system
 
@@ -135,7 +145,7 @@ The commit will be added to the branch. You should see it appear in the pull req
 Repeat step 8 until your pull request is merged!
 
 
-### Step 9: Make a second pull request
+### Step 9 (optional): Make a second pull request
 
 Your first pull request was merged. Maybe you think it was easier than you thought and you'd like to do it again.
 
@@ -191,7 +201,7 @@ git push
 
 Now go to the upstream repository web page, click on "Pull requests" and click on the button "Compare & pull request".
 
-### Step 10: Make a third pull request.
+### Step 10 (optional): Make a third pull request.
 
 I believe it's easy to understand what to do at this point. But just in case, here are the commands to execute to make a third pull request, given that you followed all the previous steps:
 
@@ -208,7 +218,7 @@ git push
 Go to the upstream repo web page and click on "Compare & pull request".
 
 
-### Step 11: Fixing merge conflicts.
+### Step 11 (optional): Fixing merge conflicts.
 
 Sometime, you'll see this status on your pull request:
 
