@@ -30,7 +30,7 @@ First head to the page of the project, in my example, https://github.com/gabriel
  * https://github.com/gabrieldemarmiesse/getting_started_open_source is upstream.
  * https://github.com/my_pretty_username/getting_started_open_source is the fork. 
  
- The fork is one of your repositories. Since it's your own repository now, you can pull and push as much as you want. When people talk about a fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits for the upstream repository.
+ The fork is one of your repositories. Since it's your own repository now, you can pull and push as much as you want. When people talk about a fork, they also talk about the upstream repository (original repository). You'll see later how to update your fork with commits from the upstream repository.
  
  ### Step 2: Cloning your fork
  
