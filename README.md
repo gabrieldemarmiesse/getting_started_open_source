@@ -1,6 +1,6 @@
 # Making a pull request to an open-source project
 
-You want to make a pull request to an open-source project? You don't know how to do it? Here is how to.
+You want to make a pull request to an open-source project? You don't know how to do it?
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
 
