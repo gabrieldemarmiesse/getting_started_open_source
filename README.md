@@ -144,7 +144,7 @@ There is obviously a better solution... Here is the setup that you need to do on
 
 #### Step 9.1: Sync your local master branch with the upstream master branch
 
-If you remember, we said earlier that working on the master branch wasn't a good idea. You'll understand why now. We need the master branch to be in sync with the upstream master branch.
+If you remember, we said earlier that working on the master branch wasn't a good idea. You'll understand why now. We need the local master branch to be in sync with the upstream master branch.
 
 Some commits have been added to the upstream master branch. To pull them locally, you need to add the upstream repo as a remote. To do that, head to the upstream repository, click on "Clone this repository" and select HTTPS. Then execute the command:
 
