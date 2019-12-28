@@ -59,7 +59,7 @@ git status
 
 You're now on the new branch `my_pretty_branch_for_pr_1` and ready to work! 
 
-Remember: one branch = one pull request. The branch name doesn't have to be the name of your pull request, so no worries if your branch name is bad or not very descriptive.
+**Remember: one branch = one pull request.** The branch name doesn't have to be the name of your pull request, so no worries if your branch name is bad or not very descriptive.
 
 ### Step 4: Modify the code/docs
 
