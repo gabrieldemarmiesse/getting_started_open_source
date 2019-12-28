@@ -34,7 +34,7 @@ First head to the page of the project, in my example, https://github.com/gabriel
  
  ### Step 2: Cloning your fork
  
- You now have your fork under your username: https://github.com/gabrieldemarmiesse/getting_started_open_source . You'll use it to work since I can push and pull with it. Click on the green "Clone" button (of your fork, not the upstream repository) and use it to clone locally. For example, in your case, you can do:
+ You now have your fork under your username: https://github.com/my_pretty_username/getting_started_open_source . You'll use it to work since you can push and pull with it. Click on the green "Clone" button (of your fork, not the upstream repository) and use it to clone locally. For example, in your case, you can do:
  
  ```bash
 git clone https://github.com/my_pretty_username/getting_started_open_source.git
