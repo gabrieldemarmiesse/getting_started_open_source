@@ -254,3 +254,4 @@ git push
 
 If everything worked, you should then see a nice green sign on your pull request:
 
+![](./screenshots/no_conflicts.png)
