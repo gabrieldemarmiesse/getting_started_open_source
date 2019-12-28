@@ -149,7 +149,7 @@ If you remember, we said earlier that working on the master branch wasn't a good
 Some commits have been added to the upstream master branch. To pull them locally, you need to add the upstream repo as a remote. To do that, head to the upstream repository, click on "Clone this repository" and select HTTPS. Then execute the command:
 
 ```bash
-git remote add upstream https://github.com/gabrieldemarmiesse/getting_started_open_source.git
+git remote add upstream THE_UPSTREAM_URL_HERE
 ```
 
 Then:
