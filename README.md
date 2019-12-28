@@ -208,3 +208,49 @@ git push
 ```
 
 Go to the upstream repo web page and click on "Compare & pull request".
+
+
+### Step 11: Fixing merge conflicts.
+
+Sometime, you'll see this status on your pull request:
+
+![](./screenshots/conflicts.png)
+
+It's a merge conflict. What does it mean for you?
+
+You made modifications on some lines on your branch. Since you opened the pull request, some other commits were added to the master branch. 
+
+The problem here is that the commits added to the master branch modified the same lines as your pull request. 
+
+Hence GitHub can't merge your commits. It doesn't know who to trust: you or the master branch? 
+
+It's your job to clarify the situation. The maintainer won't fix those conflicts for your. The best the maintainer can do is to tell you that you have merge conflicts (GitHub doesn't notify you automatically with an email, it's quite frustrating).
+
+#### How to fix the conflicts?
+
+We assume that you've follow the section [Sync your local master branch with the upstream master branch](#step-91-sync-your-local-master-branch-with-the-upstream-master-branch).
+
+```bash
+git checkout master
+git pull
+git checkout my_branch_with_merge_conflicts
+git merge master
+```
+
+Here Git will tell you that you have merge conflicts. To fix it, open your IDE/text editor. All IDEs have tools to help you fix conflicts. Most text editors have tools too. Just google:
+ 
+ > How to fix git conflicts with MY_IDE_OR_TEXT_EDITOR_HERE
+
+And you'll find out how to fix them.
+
+
+Once your conflicts are fixed, do:
+
+```bash
+git add .
+git commit
+git push
+```
+
+If everything worked, you should then see a nice green sign on your pull request:
+
