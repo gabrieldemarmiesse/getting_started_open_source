@@ -4,8 +4,6 @@ You want to make a pull request to an open-source project? You don't know how to
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
 
-This is not the only way to do it. And of course this also works with any open source project.
-
 
 ### This guide will assume that:
 
