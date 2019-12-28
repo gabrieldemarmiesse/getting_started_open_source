@@ -233,7 +233,7 @@ We assume that you've follow the section [Sync your local master branch with the
 ```bash
 git checkout master
 git pull
-git checkout my_branch_with_merge_conflicts
+git checkout my_pretty_branch_with_merge_conflicts
 git merge master
 ```
 
