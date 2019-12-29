@@ -266,3 +266,5 @@ If everything worked, you should then see a nice green sign on your pull request
 
 
 I hope this small guide helps. If something isn't clear, open an issue or make a pull request!
+
+Thank you for assembling this guide! It is straightforward and 
