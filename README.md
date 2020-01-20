@@ -232,7 +232,7 @@ The problem here is that the commits added to the master branch modified the sam
 
 Hence GitHub can't merge your commits. It doesn't know who to trust: you or the master branch? 
 
-It's your job to clarify the situation. The maintainer won't fix those conflicts for your. The best the maintainer can do is to tell you that you have merge conflicts (GitHub doesn't notify you automatically with an email, it's quite frustrating).
+It's your job to clarify the situation. The maintainer won't fix those conflicts for you. The best the maintainer can do is to tell you that you have merge conflicts (GitHub doesn't notify you automatically with an email, it's quite frustrating).
 
 #### How to fix the conflicts?
 
