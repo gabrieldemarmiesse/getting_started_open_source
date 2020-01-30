@@ -289,7 +289,7 @@ git push
 
 # Let's work on something else
 git checkout master
-git pull  # get the last updates
+git pull  # get the latest updates
 git checkout -b my_feature_2
 git add .
 git commit
