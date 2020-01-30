@@ -4,6 +4,8 @@ You want to make a pull request to an open-source project? You don't know how to
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
 
+__you've read the guide already and you just want the commands? Jump [here](#All-commands).__
+
 
 ### This guide will assume that:
 
@@ -266,3 +268,16 @@ If everything worked, you should then see a nice green sign on your pull request
 
 
 I hope this small guide helps. If something isn't clear, open an issue or make a pull request!
+
+### All commands:
+
+How I would setup my local git repo if I were to work on tensorflow/addons:
+
+```bash
+git clone git@github.com:gabrieldemarmiesse/addons.git
+cd addons
+git remote add upstream https://github.com/tensorflow/addons.git
+git fetch upstream
+git branch --set-upstream-to upstream/master
+git pull
+```
