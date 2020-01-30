@@ -280,4 +280,18 @@ git remote add upstream https://github.com/tensorflow/addons.git
 git fetch upstream
 git branch --set-upstream-to upstream/master
 git pull
+
+# Let's do work
+git checkout -b my_feature_1
+git add .
+git commit
+git push
+
+# Let's work on something else
+git checkout master
+git pull  # get the last updates
+git checkout -b my_feature_2
+git add .
+git commit
+git push
 ```
