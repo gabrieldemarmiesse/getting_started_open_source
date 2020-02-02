@@ -6,7 +6,7 @@ This guide will show you how to make a contribution (modifying code, adding thin
 
 __You've read the guide already and you just want the commands? Jump [here](#All-commands).__
 
-__You want some tips to have your pull request merged faster? Jump [here](#All-commands).__
+__You want some tips to have your pull request merged faster? Jump [here](#tips-to-have-your-pull-request-merged-faster).__
 
 
 ### This guide will assume that:
@@ -352,7 +352,7 @@ Those three reasons add up. Keep in mind, a pull request of 5 lines takes 2~3 ho
 
 I'll say it one more time:
 
-### Split your pull requests!
+__Split your pull requests!__
 
 
 
