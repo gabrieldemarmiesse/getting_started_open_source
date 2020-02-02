@@ -4,7 +4,9 @@ You want to make a pull request to an open-source project? You don't know how to
 
 This guide will show you how to make a contribution (modifying code, adding things in the docs...) to an open source project that you don't own.
 
-__you've read the guide already and you just want the commands? Jump [here](#All-commands).__
+__You've read the guide already and you just want the commands? Jump [here](#All-commands).__
+
+__You want some tips to have your pull request merged faster? Jump [here](#All-commands).__
 
 
 ### This guide will assume that:
@@ -295,3 +297,63 @@ git add .
 git commit
 git push
 ```
+
+### Tips to have your pull request merged faster:
+
+Let's get practical. You made a pull request, do you want to wait a day for the review, three days or a week? Even a month?
+
+I think you prefer to wait only a day to make a review round. The best is to make pull request which take only a few hours to get merged.
+Here is how to:
+
+#### A good description:
+
+Add a link to the issue you're fixing.
+
+If your pull request comes out of thin air, a reviewer won't understand why you do this pull request and will put it on his/her todo list instead of doing it now (procrastination).
+
+#### No changes needed:
+
+The pull request which makes the maintainer feel good. He can just drop "LGTM" and click merge. Easy. Don't worry about it too much. It's directly linked to your programming skills and your understanding of the project you're contributing to. It gets better with time.
+
+#### THE MOST IMPORTANT FACTOR: the diff size!
+
+TL;DR: Split your pull request into smaller (independant) pull requests, as much as you can.
+
+Let's take a second to look at this very serious graph, made after making and reviewing hundreds of pull requests:
+
+
+![](super_serious_graph.png)
+
+Source: trust me bro
+
+Why is it exponential? There are three main reasons, and they add up:
+
+1) It's like a big function
+
+Let's say you want to fully understand a piece of code which is a hundred lines long. If it's in a single function, how much time do you think it will take you? Now let's say that the code is splitted into 3 functions. It's going to be much faster to understand.
+
+The main reason is that there are less moving pieces. The time to understand a function is exponential to the number of variables/number of lines in it. After a while it just becomes impossible. It doesn't fit in your short-term memory.
+
+2) Reviewers are lazy
+
+Like all programmers.
+
+They see a short pull request, with a few lines changed... and they jump on it. They don't even have to correct anything. They just type the famous LGTM they click merge. And done.
+
+They see a very big pull request, hundreds of lines of code changed, and they think "well, I'll need to sit in front of my computer for around an hour to do that. I can't even split it. I have to do the full review at once...". And they think "Let's just pretend I didn't see this pull request, another maintainer will do it.".
+
+3) Parrallel processing
+
+If the project you're contributing too have multiple maintainers, and each of them allocates half an hour per day to do code review... Do you think your pull request of 150 lines (~45min of code review) will get reviewed this day?
+
+Now let's say that you make 3 independant pull requests of 50 lines each? Each of the maitainers will take care of one. And in a day everything is merged :)
+
+Those three reasons add up. Keep in mind, a pull request of 5 lines takes 2~3 hours to be merged to a normal open source project (some reviewers will read it and merge it on their phone in the commute, because it takes one minute to review). Do 500 lines... Well, I hope you're ready to wait months.
+
+I'll say it one more time:
+
+### Split your pull requests!
+
+
+
+
