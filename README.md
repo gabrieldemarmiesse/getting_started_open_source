@@ -353,4 +353,3 @@ Those three reasons add up. Keep in mind, a pull request of 5 lines takes 2~3 ho
 I'll say it one more time:
 
 __Split your pull requests!__
-Hello World !!!
