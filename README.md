@@ -342,7 +342,7 @@ They see a short pull request, with a few lines changed... and they jump on it. 
 
 They see a very big pull request, hundreds of lines of code changed, and they think "well, I'll need to sit in front of my computer for around an hour to do that. I can't even split it. I have to do the full review at once...". And they think "Let's just pretend I didn't see this pull request, another maintainer will do it.".
 
-3) Parrallel processing
+3) Parallel processing
 
 If the project you're contributing too have multiple maintainers, and each of them allocates half an hour per day to do code review... Do you think your pull request of 150 lines (~45min of code review) will get reviewed this day?
 
