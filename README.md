@@ -19,7 +19,7 @@ In here, as example, we'll say that your GitHub username is `my_pretty_username`
 
 You can follow the tutorial and make dummy pull requests to this repository. Think of it as a sandbox, it's made to learn, so no worries if you mess up! (Actually, you can't mess it up, because only I have the write permissions on it.)
 
-### Step 1: Making a fork
+### Step 1: Making a fork repository
 
 First head to the page of the project, in my example, https://github.com/gabrieldemarmiesse/getting_started_open_source . If you look at the top right of the page, you'll see a button called "Fork":
  
