@@ -9,7 +9,7 @@ __You've read the guide already and you just want the commands? Jump [here](#All
 __You want some tips to have your pull request merged faster? Jump [here](#tips-to-have-your-pull-request-merged-faster).__
 
 
-### This guide will assume that:
+### This guide assumes that:
 
 1) You know how to use git, at least you know what is a commit and a branch and a few basic commands.
 2) You know which project you want to work on. In this guide, we'll assume that it's an open source project that you don't control and that the repository is hosted on GitHub. For example, it could be [Cython](https://github.com/cython/cython), [the Windows terminal](https://github.com/microsoft/terminal) or [Tensorflow](https://github.com/tensorflow/tensorflow).
