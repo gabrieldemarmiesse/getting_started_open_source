@@ -1,4 +1,4 @@
-# Making a pull request to an open-source project
+# Making a pull request to an open-source projects
 
 You want to make a pull request to an open-source project? You don't know how to do it?
 
