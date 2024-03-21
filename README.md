@@ -120,7 +120,7 @@ CI stands for "Continuous integration". It's a system that runs on a server. It 
 
 Every time you add a commit to the repository, or every time a pull request is opened, the CI system will spawn a fresh new virtual machine, clone the repository, checkout to the commit that was just added and runs many tests. It then reports the result.
 
-There are nowadays many CI providers: Travis CI, CircleCI, Azure pilelines, Github actions...
+There are nowadays many CI providers: Travis CI, CircleCI, Azure pipelines, Github actions...
 
 
 ### Step 8 (optional): Add more commits to your pull request
@@ -354,7 +354,6 @@ I'll say it one more time:
 
 __Split your pull requests!__
 
-test
 
 
 
