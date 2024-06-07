@@ -344,7 +344,7 @@ They see a very big pull request, hundreds of lines of code changed, and they th
 
 3) Parallel processing
 
-If the project you're contributing too have multiple maintainers, and each of them allocates half an hour per day to do code review... Do you think your pull request of 150 lines (~45min of code review) will get reviewed this day?
+If the project you're contributing to has multiple maintainers, and each of them allocates half an hour per day to do code review... Do you think your pull request of 150 lines (~45min of code review) will get reviewed this day?
 
 Now let's say that you make 3 independant pull requests of 50 lines each? Each of the maitainers will take care of one. And in a day everything is merged :)
 
