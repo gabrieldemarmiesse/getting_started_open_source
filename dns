@@ -1,0 +1,14 @@
+dns -> domain names to ip addresses , 13 dns root servers -> managed by ICANN
+ip addresses -> through which computers communicate
+format of ip addresses -> first 3 network id and last host id
+network id -> the network to which many devices are connected
+host id -> the device id connected
+types of dns records -> A,AAAA,CNAME,SPF,SOA,TXT,NS,MX
+A -> identifier=1 , ipv4 address, 32 bits
+AAAA -> identifier=28 , ipv6 address,  128 bits
+MX -> mailserver which allows the mails to be sent, identifier=15
+NS -> which server contains that DNS record, associated with every domain when created ns1.domain.com , identifier=2
+TXT -> in which we write the policy about which mails are allowed , identifier=16
+SPF -> the poilicy for sending mails and to block
+SOA -> tells about the dns zone which has all the domain names and their dns record, managed by authoritative DNS servers
+
