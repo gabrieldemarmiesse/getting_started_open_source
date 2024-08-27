@@ -1,4 +1,6 @@
-# Making a pull request to an open-source project
+This is Mehdi's modifiction for practicing pull request.
+This is my change while waitng fom the pull request to be merged.
+# Making a request to an open-source project (intentioally changed by mehdi to create a conflict)
 
 You want to make a pull request to an open-source project? You don't know how to do it?
 
