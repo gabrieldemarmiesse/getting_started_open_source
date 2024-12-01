@@ -101,7 +101,7 @@ Let's say your pull request fixes an issue. You believe that this issue should b
 
 > fixes #354
 
-GitHub will detect this syntax. Once your pull request is merged, the issue 354 will be automagically closed. Use this system to save the project maintainer some of his/her time!
+GitHub will detect this syntax. Once your pull request is merged, the issue 354 will be automatically closed. Use this system to save the project maintainer some of his/her time!
 
 
 ### Step 7: The continuous integration system
@@ -120,7 +120,7 @@ CI stands for "Continuous integration". It's a system that runs on a server. It 
 
 Every time you add a commit to the repository, or every time a pull request is opened, the CI system will spawn a fresh new virtual machine, clone the repository, checkout to the commit that was just added and runs many tests. It then reports the result.
 
-There are nowadays many CI providers: Travis CI, CircleCI, Azure pilelines, Github actions...
+There are nowadays many CI providers: Travis CI, CircleCI, Azure pipelines, Github actions...
 
 
 ### Step 8 (optional): Add more commits to your pull request
@@ -317,7 +317,7 @@ The pull request which makes the maintainer feel good. He can just drop "LGTM" a
 
 #### THE MOST IMPORTANT FACTOR: the diff size!
 
-TL;DR: Split your pull request into smaller (independant) pull requests, as much as you can.
+TL;DR: Split your pull request into smaller (independent) pull requests, as much as you can.
 
 Let's take a second to look at this very serious graph, made after making and reviewing hundreds of pull requests:
 
@@ -330,7 +330,7 @@ Why is it exponential? There are three main reasons, and they add up:
 
 1) It's like a big function
 
-Let's say you want to fully understand a piece of code which is a hundred lines long. If it's in a single function, how much time do you think it will take you? Now let's say that the code is splitted into 3 functions. It's going to be much faster to understand.
+Let's say you want to fully understand a piece of code which is a hundred lines long. If it's in a single function, how much time do you think it will take you? Now let's say that the code is spited into 3 functions. It's going to be much faster to understand.
 
 The main reason is that there are less moving pieces. The time to understand a function is exponential to the number of variables/number of lines in it. After a while it just becomes impossible. It doesn't fit in your short-term memory.
 
@@ -346,7 +346,7 @@ They see a very big pull request, hundreds of lines of code changed, and they th
 
 If the project you're contributing too have multiple maintainers, and each of them allocates half an hour per day to do code review... Do you think your pull request of 150 lines (~45min of code review) will get reviewed this day?
 
-Now let's say that you make 3 independant pull requests of 50 lines each? Each of the maitainers will take care of one. And in a day everything is merged :)
+Now let's say that you make 3 independent pull requests of 50 lines each? Each of the maintainers will take care of one. And in a day everything is merged :)
 
 Those three reasons add up. Keep in mind, a pull request of 5 lines takes 2~3 hours to be merged to a normal open source project (some reviewers will read it and merge it on their phone in the commute, because it takes one minute to review). Do 500 lines... Well, I hope you're ready to wait months.
 
